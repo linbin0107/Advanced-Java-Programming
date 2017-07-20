@@ -8,6 +8,10 @@ public class NumbersToWords {
     public String numberToWords(int number) {
         buildMap();
 
+        if (number == 0) {
+            return map.get(0);
+        }
+
         String res = "";
 
         if (number >= 1000000000) {

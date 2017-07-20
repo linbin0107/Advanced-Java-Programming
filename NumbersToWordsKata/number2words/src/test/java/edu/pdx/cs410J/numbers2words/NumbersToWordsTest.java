@@ -11,6 +11,6 @@ public class NumbersToWordsTest {
     @Test
     public void numberZeroReturnZero() {
         NumbersToWords ntw = new NumbersToWords();
-        assertEquals(ntw.converter(0), "Zero");
+        assertEquals(ntw.numberToWords(0), "Zero");
     }
 }
