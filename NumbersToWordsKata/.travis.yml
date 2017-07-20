@@ -1,0 +1,10 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+before_script:
+  - cd number2words
+
+script:
+  - mvn --batch-mode verify
