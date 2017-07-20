@@ -39,54 +39,6 @@
       </roles>
       <timezone>-7</timezone>
     </developer>
-    <developer>
-      <id>anturner</id>
-      <name>Andy Turner Anthony Tran</name>
-      <email>anturner@pdx.edu</email>
-      <url>http://www.cs.pdx.edu/~anturner</url>
-      <organization>PSU Department of Computer Science</organization>
-      <organizationUrl>http://www.cs.pdx.edu</organizationUrl>
-      <roles>
-        <role>Student</role>
-      </roles>
-      <timezone>-7</timezone>
-    </developer>
-    <developer>
-    <id>murphpdx</id>
-    <name>Amanda Murphy</name>
-    <email>murphyam@pdx.edu</email>
-    <url>http://www.cs.pdx.edu/~murphyam</url>
-    <organization>PSU Department of Computer Science</organization>
-    <organizationUrl>http://www.cs.pdx.edu</organizationUrl>
-    <roles>
-      <role>Student</role>
-    </roles>
-    <timezone>-7</timezone>
-  </developer>
-    <developer>
-      <id>llawrens</id>
-      <name>Liz Lawrens</name>
-      <email>llawrens@pdx.edu</email>
-      <url> </url>
-      <organization>PSU Department of Computer Science</organization>
-      <organizationUrl>http://www.cs.pdx.edu</organizationUrl>
-      <roles>
-        <role>Student</role>
-      </roles>
-      <timezone>-7</timezone>
-    </developer>
-    <developer>
-      <id>nivedit</id>
-      <name>Niveditha Venugopal</name>
-      <email>nivedit@pdx.edu</email>
-      <url> </url>
-      <organization>PSU Department of Computer Science</organization>
-      <organizationUrl>http://www.cs.pdx.edu</organizationUrl>
-      <roles>
-        <role>Student</role>
-      </roles>
-      <timezone>-7</timezone>
-    </developer>
   </developers>
   <repositories>
     <repository>
