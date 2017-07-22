@@ -3,7 +3,11 @@ package edu.pdx.cs510J.linbin;
 import edu.pdx.cs410J.AbstractAirline;
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -74,14 +78,26 @@ public class Project1 {
       System.exit(1);
     }
 
-    // TODO: Check the format of the day
+    // args[3], args[6]
+    DateFormat format = new SimpleDateFormat("mm/dd/yyyy");
+    format.setLenient(false);
+    try {
+      Date date1 = format.parse(args[3]);
+      Date date2 = format.parse(args[6]);
+    } catch (ParseException e) {
+      throw new IllegalArgumentException("The date you entered was not valid");
+    }
 
-    // TODO: Check the format of time
+    // args[4], args[7]
+    if(!args[4].matches("([01]?[0-9]|2[0-3]):[0-5][0-9]") ||
+            !args[7].matches("([01]?[0-9]|2[0-3]):[0-5][0-9]")){
+      throw new IllegalArgumentException("The time you entered was not valid");
+    }
 
     // Check if an airport code contains three letters
-    if (args[2].length() != 3 || args[5].length() != 3) {
-      System.out.println("An airport code does not contain three letters");
-      System.exit(1);
+    if ((args[2].length() != 3) || (args[5].length() != 3) ||
+            !args[2].matches("[A-Z]{3}") || !args[5].matches("[A-Z]{3}")) {
+      throw new IllegalArgumentException("An airport code does not contain three letters");
     }
   }
 
