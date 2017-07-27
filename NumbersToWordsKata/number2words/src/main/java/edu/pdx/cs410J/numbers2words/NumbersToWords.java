@@ -36,7 +36,7 @@ public class NumbersToWords {
             res += converter(number);
         }
 
-        return null;
+        return res.trim();
     }
 
     private String converter(int quotient) {
@@ -44,7 +44,7 @@ public class NumbersToWords {
 
         if (quotient >= 100) {
             int hundred = quotient / 100;
-            str += map.get(hundred) + " Hundred";
+            str += " " + map.get(hundred) + " Hundred";
             quotient %= 100;
         }
 
@@ -75,7 +75,7 @@ public class NumbersToWords {
         map.put(6, "Six");
         map.put(7, "Seven");
         map.put(8, "Eight");
-        map.put(9, "Night");
+        map.put(9, "Nine");
         map.put(10, "Ten");
         map.put(11, "Eleven");
         map.put(12, "Twelve");
@@ -93,6 +93,6 @@ public class NumbersToWords {
         map.put(60, "Sixty");
         map.put(70, "Seventy");
         map.put(80, "Eighty");
-        map.put(90, "Nighty");
+        map.put(90, "Ninety");
     }
 }
